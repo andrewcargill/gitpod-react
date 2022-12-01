@@ -5,7 +5,7 @@ import StatefulGreeting from './components/StatefulGreeting';
 function App() {
   return (
     <div className="App">
-      <StatefulGreeting greeting="I am this" name="dave" />
+      <StatefulGreeting greeting="I am happy" name="dave" />
     </div>
   );
 }
