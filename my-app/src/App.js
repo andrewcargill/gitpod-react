@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import StatefulGreeting from './components/StatefulGreeting';
+import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrevState';
 
 function App() {
   return (
     <div className="App">
-      <StatefulGreeting greeting="I am happy" name="dave" />
+      <StatefulGreetingWithPrevState greeting="I am happy" name="dave" />
     </div>
   );
 }
