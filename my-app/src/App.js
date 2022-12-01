@@ -6,6 +6,9 @@ import EventsClass from './components/EventsClass';
 import EventBinding from './components/EventBinding';
 import ConditionalRenderingClass from './components/ConditionalRenderingClass';
 import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
+import NestingComponents from './components/NestingComponents';
+import MethodsAsPropsChild from './components/MethodsAsPropsChild';
+import MethodsAsPropsParent from './components/MethodsAsPropParent';
 
 function App() {
   return (
@@ -16,9 +19,13 @@ function App() {
       <br />
       <EventBinding greeting="What a lovely day!" name="Dave"/>
       <br />
-      <ConditionalRenderingClass />
+      {/* <ConditionalRenderingClass /> */}
       <br />
-      <ConditionalRenderingFunctional connected={true} />
+      {/* <ConditionalRenderingFunctional connected={true} /> */}
+      <br />
+      <NestingComponents />
+      <br />
+      <MethodsAsPropsParent />
     </div>
   );
 }
