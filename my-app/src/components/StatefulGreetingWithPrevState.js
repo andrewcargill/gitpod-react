@@ -26,7 +26,7 @@ class StatefulGreetingWithPrevState extends React.Component {
     //     console.log('------------old state', this.state.buttonText);
     // }
 
-    handClick() {
+    handleClick() {
         this.setState((prevState, prevProps) => {
             console.log('prev state:', prevState)
             console.log('prev props:', prevProps)
