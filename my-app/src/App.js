@@ -4,6 +4,8 @@ import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrev
 import EventsFunctional from './components/EventsFunctional';
 import EventsClass from './components/EventsClass';
 import EventBinding from './components/EventBinding';
+import ConditionalRenderingClass from './components/ConditionalRenderingClass';
+import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
 
 function App() {
   return (
@@ -13,6 +15,10 @@ function App() {
       <EventsClass />
       <br />
       <EventBinding greeting="What a lovely day!" name="Dave"/>
+      <br />
+      <ConditionalRenderingClass />
+      <br />
+      <ConditionalRenderingFunctional connected={true} />
     </div>
   );
 }
