@@ -28,22 +28,23 @@ function RenderingLists() {
             pages: 2831
         },
         {
-            title: 'book 3',
+            title: 'book 4',
             author: 'Dave',
             pages: 2821
         },
     ]
   return (
     <div>
+        <h3>Using Key so react knows what to update</h3>
         {bookList.map( book => {
-            return <h2>{book}</h2>
+            return <h2 key={book}>{book}</h2>
     })}
     <hr />
     <h1>Doing the rendering from within the the main function</h1>
     {
         books.map(book => {
             return (
-                <div>
+                <div key={book.title}>
                 <h5>{book.title}</h5>
                 <p>{book.author}</p>
                 <p>{book.pages}</p>
@@ -55,7 +56,7 @@ function RenderingLists() {
     <h1>Using Book.js to handle the rendering of the list</h1>
     {
         books.map(book => {
-            return <Book book={book} />
+            return <Book key={book.title} book={book} />
         })
     }
     </div>
