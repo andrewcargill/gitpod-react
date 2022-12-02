@@ -10,10 +10,15 @@ import NestingComponents from './components/NestingComponents';
 import MethodsAsPropsChild from './components/MethodsAsPropsChild';
 import MethodsAsPropsParent from './components/MethodsAsPropParent';
 import RenderingLists from './components/RenderingLists';
+import LifeCycleCDM from './components/LifeCycleCDM';
 
 function App() {
   return (
     <div className="App">
+      <br />
+      <h1>Life Cycle Component Did Mount</h1>
+      <LifeCycleCDM />
+      <br />
       <StatefulGreetingWithPrevState greeting="I am happy" name="dave" />
       <EventsFunctional />
       <EventsClass />
