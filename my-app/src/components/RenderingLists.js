@@ -53,7 +53,7 @@ function RenderingLists() {
         })
     }
     <hr />
-    <h1>Using Book.js to handle the rendering of the list</h1>
+    <h1>Using Book.js - a child - to handle the rendering of the list</h1>
     {
         books.map(book => {
             return <Book key={book.title} book={book} />
