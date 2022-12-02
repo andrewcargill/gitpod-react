@@ -17,51 +17,91 @@ import ControlledForm from './components/ControlledForm';
 import UncontrolledForm from './components/UncontrolledForm';
 import SearchBar from './components/SearchBar';
 import ControlledFormHook from './components/ControlledFormHook';
+import UseStateWithArrays from './components/UseStateWithArrays';
 
 function App() {
   return (
     <div className="App">
 
+      <div style={{border: '5px solid red'}}>
+      <br />
+      <h1>UseStateWithArrays - hooks</h1>
+      <p>UseStateWithArrays.js</p>
+      <UseStateWithArrays />
+      </div>
+      <br />
+      <div style={{border: '5px solid red'}}>
       <br />
       <h1>Forms - Using Hooks</h1>
       <p>ControlledFromHook.js</p>
       <ControlledFormHook />
+      </div>
       <br />
+      <div style={{border: '5px solid red'}}>
       <h1>Forms - uncontrolled forms</h1>
       <h3>Dom controls some elements alongside React</h3>
       <UncontrolledForm />
+      </div>
       <br />
+      <div style={{border: '5px solid red'}}>
       <h1>Forms - controlled forms</h1>
       <h3>React controls everything</h3>
       <ControlledForm />
+      </div>
+      <br />
+      <div style={{border: '5px solid red'}}>
       <h1>Life Cycle CWU - ComponentWillUnmount</h1>
       <LifeCycleCWU />
+      </div>
+      <br />
+      <div style={{border: '5px solid red'}}>
       <h1>Life Cycle CDU - Component Did Update</h1>
       <LifeCyleCDU />
+      </div>
       <br />
+      <div style={{border: '5px solid red'}}>
       <h1>Life Cycle Component Did Mount</h1>
       <LifeCycleCDM />
+      </div>
       <br />
+      <div style={{border: '5px solid red'}}>
       <h1>Functional and Class events</h1>
       <StatefulGreetingWithPrevState greeting="I am happy" name="dave" />
       <EventsFunctional />
       <EventsClass />
+      </div>
       <br />
+      <div style={{border: '5px solid red'}}>
       <EventBinding greeting="What a lovely day!" name="Dave"/>
+      </div>
       <br />
+      <div style={{border: '5px solid red'}}>
       {/* <ConditionalRenderingClass /> */}
       <br />
       {/* <ConditionalRenderingFunctional connected={true} /> */}
+      </div>
       <br />
+      <div style={{border: '5px solid red'}}>
       <NestingComponents />
+      </div>
       <br />
+      <div style={{border: '5px solid red'}}>
       <h1>This is the one!</h1>
       <MethodsAsPropsParent />
+      </div>
       <br />
+      <div style={{border: '5px solid red'}}>
       <h1>Rendering Lists</h1>
       <RenderingLists />
+      </div>
+      <br />
+      <div style={{border: '5px solid red'}}>
       <h1>Search Bar</h1>
+      </div>
+      <br />
+      <div style={{border: '5px solid red'}}>
       <SearchBar />
+      </div>
     </div>
   );
 }
