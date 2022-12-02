@@ -14,12 +14,22 @@ import LifeCycleCDM from './components/LifeCycleCDM';
 import LifeCyleCDU from './components/LifeCyleCDU';
 import LifeCycleCWU from './components/LifeCycleCWU';
 import ControlledForm from './components/ControlledForm';
+import UncontrolledForm from './components/UncontrolledForm';
+import SearchBar from './components/SearchBar';
 
 function App() {
   return (
     <div className="App">
       <br />
+      <h1>Search Bar</h1>
+      <SearchBar />
+      <br />
+      <h1>Forms - uncontrolled forms</h1>
+      <h3>Dom controls some elements alongside React</h3>
+      <UncontrolledForm />
+      <br />
       <h1>Forms - controlled forms</h1>
+      <h3>React controls everything</h3>
       <ControlledForm />
       <h1>Life Cycle CWU - ComponentWillUnmount</h1>
       <LifeCycleCWU />

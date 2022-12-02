@@ -26,26 +26,26 @@ export class ControlledForm extends Component {
             name: event.target.value
         })
     }
-
     handleCategoryChange = (event) => {
         this.setState({
             category: event.target.value
         })
     }
-
     handleCommentsChange = (event) => {
         this.setState({
             comments: event.target.value
         })
     }
-
-
+    handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(this.state)
+    }
 
     render() {
         return (
         <div>
             <h2>Please fill out the form below</h2>
-            <form action="">
+            <form onSubmit={this.handleSubmit}>
                 <div>
                     <label htmlFor="id-name">Your Name:</label>
                     <input value={this.state.name}
@@ -80,6 +80,8 @@ export class ControlledForm extends Component {
             </form>
             <h5>Printing out state.name to show whats going on</h5>
             <h1>{this.state.name}</h1>
+            <h1>{this.state.category}</h1>
+            <h1>{this.state.comments}</h1>
         </div>
         )
     }
