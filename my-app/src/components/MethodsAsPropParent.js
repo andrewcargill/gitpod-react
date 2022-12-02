@@ -26,6 +26,7 @@ class MethodsAsPropsParent extends Component {
     render() {
         return (
             <div>
+                 <button onClick={()=> this.handleClick()}>Login</button>
                 <MethodsAsPropsChild 
                     isLoggedIn={this.state.isLoggedIn} 
                     handleSignIn={this.handleSignIn}
