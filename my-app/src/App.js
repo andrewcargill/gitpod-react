@@ -11,10 +11,13 @@ import MethodsAsPropsChild from './components/MethodsAsPropsChild';
 import MethodsAsPropsParent from './components/MethodsAsPropParent';
 import RenderingLists from './components/RenderingLists';
 import LifeCycleCDM from './components/LifeCycleCDM';
+import LifeCyleCDU from './components/LifeCyleCDU';
 
 function App() {
   return (
     <div className="App">
+      <h1>Life Cycle CDU - Component Did Update</h1>
+      <LifeCyleCDU />
       <br />
       <h1>Life Cycle Component Did Mount</h1>
       <LifeCycleCDM />

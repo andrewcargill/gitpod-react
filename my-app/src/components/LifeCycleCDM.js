@@ -3,7 +3,7 @@ import LifeCyclesCDMChild from './LifeCyclesCDMChild';
 
 export class LifeCycleCDM extends Component {
     constructor(props) {
-        console.log('Parent - constructor called');
+        // console.log('Parent - constructor called');
       super(props)
     
       this.state = {
@@ -11,9 +11,9 @@ export class LifeCycleCDM extends Component {
       }
     }
     getData() {
-        console.log("Parent - getData()")
+        // console.log("Parent - getData()")
         setTimeout(() => {
-            console.log("Parent - setTimeout");
+            // console.log("Parent - setTimeout");
             this.setState({
                 data: 'loaded'
             })
@@ -21,11 +21,11 @@ export class LifeCycleCDM extends Component {
     }
 
     componentDidMount() {
-        console.log("Parent - componentDidMount()")
+        // console.log("Parent - componentDidMount()")
         this.getData()
     }
   render() {
-    console.log("Parent - page rendered");
+    // console.log("Parent - page rendered");
     return (
       <div>
         <h1>{this.state.data}</h1>

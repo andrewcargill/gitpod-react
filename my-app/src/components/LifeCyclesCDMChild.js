@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class LifeCyclesCDMChild extends Component {
 
   constructor(props) {
-    console.log('Child Constructor Called')
+    // console.log('Child Constructor Called')
     super(props)
 
     this.state = {
@@ -12,9 +12,9 @@ export class LifeCyclesCDMChild extends Component {
   }
 
   getData() {
-    console.log('Child getData() called')
+    // console.log('Child getData() called')
     setTimeout(() => {
-      console.log('Child Data fetched!')
+      // console.log('Child Data fetched!')
       this.setState({
         data: 'Child Loaded!'
       })
@@ -22,13 +22,13 @@ export class LifeCyclesCDMChild extends Component {
   }
 
   componentDidMount() {
-    console.log('Child Component mounted')
+    // console.log('Child Component mounted')
     this.getData();
   }
 
 
   render() {
-    console.log('Child Render method called')
+    // console.log('Child Render method called')
     return (
       <div>
         <h1>{this.state.data}</h1>
