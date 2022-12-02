@@ -13,10 +13,14 @@ import RenderingLists from './components/RenderingLists';
 import LifeCycleCDM from './components/LifeCycleCDM';
 import LifeCyleCDU from './components/LifeCyleCDU';
 import LifeCycleCWU from './components/LifeCycleCWU';
+import ControlledForm from './components/ControlledForm';
 
 function App() {
   return (
     <div className="App">
+      <br />
+      <h1>Forms - controlled forms</h1>
+      <ControlledForm />
       <h1>Life Cycle CWU - ComponentWillUnmount</h1>
       <LifeCycleCWU />
       <h1>Life Cycle CDU - Component Did Update</h1>
