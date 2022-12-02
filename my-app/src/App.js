@@ -12,10 +12,13 @@ import MethodsAsPropsParent from './components/MethodsAsPropParent';
 import RenderingLists from './components/RenderingLists';
 import LifeCycleCDM from './components/LifeCycleCDM';
 import LifeCyleCDU from './components/LifeCyleCDU';
+import LifeCycleCWU from './components/LifeCycleCWU';
 
 function App() {
   return (
     <div className="App">
+      <h1>Life Cycle CWU - ComponentWillUnmount</h1>
+      <LifeCycleCWU />
       <h1>Life Cycle CDU - Component Did Update</h1>
       <LifeCyleCDU />
       <br />
