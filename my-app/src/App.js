@@ -18,16 +18,23 @@ import UncontrolledForm from './components/UncontrolledForm';
 import SearchBar from './components/SearchBar';
 import ControlledFormHook from './components/ControlledFormHook';
 import UseStateWithArrays from './components/UseStateWithArrays';
+import UseStateWithObjects from './components/UseStateWithObjects';
 
 function App() {
   return (
     <div className="App">
 
       <div style={{border: '5px solid red'}}>
-      <br />
-      <h1>UseStateWithArrays - hooks</h1>
-      <p>UseStateWithArrays.js</p>
-      <UseStateWithArrays />
+        <h1>Use Hooks with Objects - pt1</h1>
+        <p>UseStateWithObjects.js</p>
+        <br />
+        <UseStateWithObjects />
+      </div>
+      <div style={{border: '5px solid red'}}>
+        <br />
+        <h1>UseStateWithArrays - hooks</h1>
+        <p>UseStateWithArrays.js</p>
+        <UseStateWithArrays />
       </div>
       <br />
       <div style={{border: '5px solid red'}}>
