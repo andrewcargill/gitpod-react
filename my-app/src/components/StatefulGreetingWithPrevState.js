@@ -48,8 +48,6 @@ class StatefulGreetingWithPrevState extends React.Component {
     // function that always looks back at the previous state
     increment() {
         this.setState((prevState, prevProps) => {
-            console.log('prev state:', prevState)
-            console.log('prev props:', prevProps)
             return {
                 count: prevState.count + 1
             }

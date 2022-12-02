@@ -16,13 +16,16 @@ import LifeCycleCWU from './components/LifeCycleCWU';
 import ControlledForm from './components/ControlledForm';
 import UncontrolledForm from './components/UncontrolledForm';
 import SearchBar from './components/SearchBar';
+import ControlledFormHook from './components/ControlledFormHook';
 
 function App() {
   return (
     <div className="App">
+
       <br />
-      <h1>Search Bar</h1>
-      <SearchBar />
+      <h1>Forms - Using Hooks</h1>
+      <p>ControlledFromHook.js</p>
+      <ControlledFormHook />
       <br />
       <h1>Forms - uncontrolled forms</h1>
       <h3>Dom controls some elements alongside React</h3>
@@ -39,6 +42,7 @@ function App() {
       <h1>Life Cycle Component Did Mount</h1>
       <LifeCycleCDM />
       <br />
+      <h1>Functional and Class events</h1>
       <StatefulGreetingWithPrevState greeting="I am happy" name="dave" />
       <EventsFunctional />
       <EventsClass />
@@ -56,6 +60,8 @@ function App() {
       <br />
       <h1>Rendering Lists</h1>
       <RenderingLists />
+      <h1>Search Bar</h1>
+      <SearchBar />
     </div>
   );
 }
