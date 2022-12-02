@@ -19,11 +19,18 @@ import SearchBar from './components/SearchBar';
 import ControlledFormHook from './components/ControlledFormHook';
 import UseStateWithArrays from './components/UseStateWithArrays';
 import UseStateWithObjects from './components/UseStateWithObjects';
+import UseEffectCounter from './components/UseEffectCounter';
 
 function App() {
   return (
     <div className="App">
 
+      <div style={{border: '5px solid blue'}}>
+        <h1>using hooks to update elements</h1>
+        <p>UseEffectCounter.js</p>
+        <UseEffectCounter />
+        <br />
+      </div>
       <div style={{border: '5px solid red'}}>
         <h1>Use Hooks with Objects - pt1</h1>
         <p>UseStateWithObjects.js</p>
