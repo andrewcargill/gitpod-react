@@ -23,6 +23,7 @@ function UseEffectCounter() {
       document.title = count2;
     }, [count2]);
 
+
   return (
     <div>
         <button onClick={

@@ -20,11 +20,28 @@ import ControlledFormHook from './components/ControlledFormHook';
 import UseStateWithArrays from './components/UseStateWithArrays';
 import UseStateWithObjects from './components/UseStateWithObjects';
 import UseEffectCounter from './components/UseEffectCounter';
+import UseEffectCounterOnlyOnce from './components/UseEffectCounterOnlyOnce';
+import UseEffectCounterContainer from './components/UseEffectCounterContainer';
 
 function App() {
   return (
     <div className="App">
 
+      <div style={{border: '5px solid blue'}}>
+        <h1>Hooks - Clean up functions</h1>
+        <h3>any function executed before a component unmounts</h3>
+        <h4>so the browser or the DOM don't have unused event listeners, timers, hung network requests</h4>
+        <p>UseEffectCounterOnlyOnce.js</p>
+        <p>Something wrong here - but ref video 'effect cleanup functions</p>
+        <UseEffectCounterContainer />
+        <br />
+      </div>
+      <div style={{border: '5px solid blue'}}>
+        <h1>Running effects on once - eg. when a component mounts</h1>
+        <p>UseEffectCounterOnlyOnce.js</p>
+        {/* <UseEffectCounterOnlyOnce /> */}
+        <br />
+      </div>
       <div style={{border: '5px solid blue'}}>
         <h1>using hook 'useEffect' to update elements after every render</h1>
         <p>UseEffectCounter.js</p>
