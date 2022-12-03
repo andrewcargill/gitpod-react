@@ -26,7 +26,7 @@ function App() {
     <div className="App">
 
       <div style={{border: '5px solid blue'}}>
-        <h1>using hooks to update elements</h1>
+        <h1>using hook 'useEffect' to update elements after every render</h1>
         <p>UseEffectCounter.js</p>
         <UseEffectCounter />
         <br />
